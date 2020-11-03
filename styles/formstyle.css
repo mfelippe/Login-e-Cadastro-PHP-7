@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100vh;
+}
+
+body {
+    background-color: #fa9214;
+    font-family: Roboto, Arial, sans-serif;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 32px;
+    letter-spacing: 1px;
+    margin: 20px 0;
+    color: white;
+}
+
+
+form {
+    margin: 20px 0;
+    background-color: white;
+    padding: 30px 25px;
+    border-radius: 5px;
+}
+
+form .input-block {
+    margin-bottom: 20px;
+}
+
+form .input-block label {
+    font-size: 14px;
+    color: #faad0c;
+}
+
+form .input-block input {
+    width: 100%;
+    display: block;
+    margin-top: 8px;
+    padding: 7px;
+    font-size: 16px;
+    color: #faad0c;
+    border-radius: 2px;
+    border: 1px solid #ccddef;
+    outline-color: #faad0c;
+}
+
+form .btn-login {
+    display: block;
+    min-width: 120px;
+    border: none;
+    background-color: #ff9605;
+    color: white;
+    border-radius: 25px;
+    margin: auto;
+    padding: 7px;
+}
+
+form .link_cadastro{
+    text-decoration: none;
+    display: block;
+    margin:15px auto;
+    font-size: 12px;
+    color: #faad0c;
+    text-align: center;
+}
+form .btn-cad{
+    display: block;
+    min-width: 120px;
+    border: none;
+    background-color: #ff9605;
+    color: white;
+    border-radius: 25px;
+    margin: auto;
+    padding: 7px;
+
+}
+
+/* ============   Animação no Css ============   */
+body{
+    overflow: hidden;
+}
+h1{
+    animation-name: fade;
+    animation-duration: 1s;
+}
+form{
+    animation-name: fade;
+    animation-duration: 2s;
+}
+.titulo-cadastro{
+    animation: fade 4s;
+}
+.form-cadastro{
+    animation: fade 3s;
+}
+
+@keyframes fade {
+    from{
+        opacity: 0;
+        transform: scale(0.9);
+    }to{
+        opacity: 1;
+        transform: scale(1);
+         }
+}
+/* linhas animação no backgound-da pagina */
+
+.lines li{
+    width: 5px;
+    height: 15px;
+    background-color: rgba(255,255,255,0.50);
+    display:block;
+    position: absolute;
+    bottom: 0;
+    animation: up 2s infinite alternate;
+}
+@keyframes up {
+    from{
+        opacity: 0;
+        transform: translateY(0);
+    }50%{
+        opacity: 1;
+    }to{
+        opacity: 0;
+        transform: translateY(-700px);
+   }
+}
